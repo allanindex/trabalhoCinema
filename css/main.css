@@ -3,15 +3,21 @@
     padding: 0;
     font-family: "Roboto", sans-serif;
 }
-
+:root {
+    --black: #000000;
+    --dark-red: #8B0000;
+    --dark-gray: #333333;
+    --light-red: #FF4500;
+    --white: #FFFFFF;
+}
 
 .navHeader{
     display: flex;
     justify-content: space-between;
     height: 80px;
     align-items: center;
-    background-color: rgb(28, 28, 28);
-    padding:  0 40px;
+    background-color: rgb(6, 6, 6);
+    padding:  0 80px;
     color: white;
 }
 
@@ -32,4 +38,52 @@
     height: 90vh;
     background-image: url('../img/background.jpg');
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.container1 .overlay {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: calc(90vh - 80px);
+    background-color: rgba(0, 0, 0, 0.639); 
+}
+.container1 .c1Text{
+    color: white;
+    position: relative;
+    z-index: 3;
+    width: 45%;
+    font-size: 1.4rem;
+    padding: 80px 80px 0 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.container1 .c1Text h1{
+    font-size: 4rem;
+    font-weight: 500;
+}
+.actions{
+    margin-left: 80px;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    gap: 15px;
+}
+.actions button{
+    width: 150px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+.actions #btn1{
+    background-color: var(--dark-red);
+    color: white;
+}
+.actions #btn2{
+    background-color: var(--dark-gray);
+    color: var(--white);   
 }
