@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+:root {
+    --black: #000000;
+    --dark-red: #8B0000;
+    --dark-gray: #333333;
+    --light-red: #FF4500;
+    --white: #FFFFFF;
+}
+
+body{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    color: white;
+    width: 25vw;
+    height: 92vh;
+    padding: 30px 30px 0 30px;
+    border-radius: 10px;
+    background-color:  #151515;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+h1{
+    font-weight: 500;
+}
+.formOption{
+    display: flex;
+    flex-direction: column;
+}
+.formOption label{
+    color: #8f8f8f;
+}
+.formOption input{
+    height: 30px;
+    background-color:transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--dark-red);
+    color: white;
+}
+button{
+    height: 45px;
+    border-radius: 10px;
+    width: 200px;
+    border: none;
+    font-size: 1.1rem;
+    margin: auto;
+    background-color: #000000;
+    color: white;
+    border: 1px solid white;
+}
+a{
+    text-align: center;
+    text-decoration: none;
+    color: #8f8f8f;
+    
+}
+.actions{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+.passwordInput{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+.passwordInput input{
+    width: 85%;
+    font-size: 0.9rem;
+}
+.passwordInput .eye{
+    border: none;
+    border-bottom: 2px solid var(--dark-red);
+    padding: 5px;
+    width: 15%;
+}
