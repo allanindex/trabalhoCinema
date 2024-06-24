@@ -78,6 +78,7 @@
     border: none;
     border-radius: 10px;
     font-size: 1rem;
+    cursor: pointer;
 }
 .actions #btn1{
     background-color: var(--dark-red);
